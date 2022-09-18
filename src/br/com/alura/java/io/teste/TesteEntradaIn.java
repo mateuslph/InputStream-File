@@ -14,7 +14,7 @@ public class TesteEntradaIn {
 
 		//fluxo de entrada com arquivo
 		InputStream fis = System.in; //= new FileInputStream("loren.txt");
-		InputStreamReader isr = new InputStreamReader(fis);
+		InputStreamReader isr = new InputStreamReader(fis, "UTF-8"); // tambem pode definir o charset
 		BufferedReader br = new BufferedReader(isr);
 		
 		FileOutputStream fos = new FileOutputStream("loren3.txt"); // = System.out; // saida no console
